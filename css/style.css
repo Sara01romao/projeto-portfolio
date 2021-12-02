@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --green-dark: #70da1c;
+  --green-light: #ccf235;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  max-width: 1220px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  margin: 0px 10px 0px 30px;
+}
+
+ul li a {
+  font-size: 18px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--green-dark);
+  transition: 0.8s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    margin-top: 40px;
+  }
+
+  ul li a {
+    background-color: rgb(236, 236, 236);
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul li a:hover {
+    border: 3px solid var(--green-dark);
+  }
+
+  ul li a:hover::after {
+    width: 0%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  ul li {
+    margin: 0px 5px 0px 10px;
+  }
+
+  ul li a {
+    background-color: rgb(236, 236, 236);
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+}
