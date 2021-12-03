@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 nav {
   max-width: 1220px;
   margin: 30px auto;
@@ -53,7 +58,7 @@ ul li a {
 ul li a::after {
   content: "";
   width: 0%;
-  height: 4px;
+  height: 3px;
   border-radius: 5px;
   background-color: var(--green-dark);
   transition: 0.8s;
@@ -80,7 +85,7 @@ ul li a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   ul li a:hover {
@@ -106,4 +111,48 @@ ul li a:hover::after {
     justify-content: center;
     font-size: 1rem;
   }
+}
+
+
+/*HOME*/
+
+.info{
+  display: grid;
+  grid-template-columns: 363px 1fr;
+  align-items: center;
+  margin-top: 60px;
+  border: 1px solid red;
+  
+}
+
+.info img{
+  max-width: 100%;
+  object-fit: cover;
+  border: 1px solid red;
+}
+.infoTxt{
+ padding-left: 100px;
+ border: 1px solid red;
+ 
+
+}
+
+h1{
+  
+  font-size: 4.5rem;
+  max-width: 520px;
+  border: 1px solid red;
+  position: relative;
+ 
+  
+}
+h1::before{
+  content: url('../img/detalhe.svg');
+  position: absolute;
+  left: -46px;
+  top: -32px;
+  z-index: -1;
+  
+  
+
 }
