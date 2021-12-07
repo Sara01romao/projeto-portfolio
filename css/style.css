@@ -33,6 +33,15 @@ a {
   max-width: 4ch;
 }
 
+@media screen and (max-width: 800px) {
+  .subtitulo{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+  
+}
+
 /*Menu*/
 nav {
   max-width: 1220px;
@@ -276,3 +285,34 @@ h1::before {
   padding: 5px 10px;
 
 }
+
+@media screen and (max-width: 800px) {
+  .experiencia{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo{
+    color: #141414;
+  }
+
+  .experiencia-texto{
+    font-size: 1.25rem;
+  }
+
+  .empresa-ano{
+    position: initial;
+    order:1;
+    width: initial;
+    text-align: left;
+
+  }
+  
+}
+
+@media screen and (max-width: 400px){
+  .empresa{
+    grid-template-columns: 1fr;
+  }
+}
+
